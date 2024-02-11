@@ -156,6 +156,22 @@ All added functions **MUST** be documented, with the format for documentation be
 
 #### functions or macros
 
+**comment template:**
+
+````rust
+/// Description and output for function.
+///
+/// # Attributes
+/// * `name` - description
+///
+/// # Example
+/// ```
+/// [example use code here when applicable]
+/// ```
+````
+
+**example:**
+
 ````rust
 /// Macro for generating lazy regex object with just regex string for initializing static regex object for checks
 ///
