@@ -1,3 +1,19 @@
+#[macro_export]
+macro_rules! debug {
+    ($($e:expr),+) => {
+        {
+            #[cfg(debug_assertions)]
+            {
+                dbg!($($e),+)
+            }
+            #[cfg(not(debug_assertions))]
+            {
+                ($($e),+)
+            }
+        }
+    };
+}
+
 /// List of main menu inputs.
 ///
 /// # Attributes
@@ -43,7 +59,7 @@ pub mod input_validation {
 
         match in_type {
             InValType::Menu => NUM_RE.is_match(in_str),
-            _ => false,
+            // _ => false,
         }
     }
 }

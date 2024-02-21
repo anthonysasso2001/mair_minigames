@@ -140,7 +140,7 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/anthon
 
 ### Your First Code Contribution
 
-All code contributions must be made ideally from a branch of the repo, which will then be merged upon review.
+All code contributions must be made from a branch of the repo, which will then be merged upon review.
 
 The requirements for a PR are listed in the [code request template file](pull_request_template.md) which will require that the details be fully complete before a review can occur.
 
